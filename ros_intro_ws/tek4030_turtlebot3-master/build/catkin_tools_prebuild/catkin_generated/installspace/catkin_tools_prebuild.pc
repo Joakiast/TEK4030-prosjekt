@@ -1,0 +1,8 @@
+prefix=/home/joakiast/TEK4030-prosjekt/ros_intro_ws/tek4030_turtlebot3-master/install
+
+Name: catkin_tools_prebuild
+Description: Description of catkin_tools_prebuild
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
