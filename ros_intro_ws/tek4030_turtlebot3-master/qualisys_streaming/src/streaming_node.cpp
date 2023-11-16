@@ -56,7 +56,7 @@ int main(int argc, char **argv)
         const int            minorVersion = 19;
         const bool           bigEndian = false;
         
-        const std::string    objectName = "burger2";
+        const std::string    objectName = "23";
 
         bool dataAvailable = false;
         bool streamFrames = false;

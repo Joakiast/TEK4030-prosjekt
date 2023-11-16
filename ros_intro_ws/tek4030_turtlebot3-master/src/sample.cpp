@@ -40,6 +40,13 @@ int main (int argc, char **argv){
         twist.angular.z = 0.50;
 
 
+        //===========formlene=================================
+
+        int k = 0;
+        
+
+
+
         geometry_msgs::Pose pose;                 // message received from somewhere
         double yaw = tf2::getYaw(pose.orientation);
      

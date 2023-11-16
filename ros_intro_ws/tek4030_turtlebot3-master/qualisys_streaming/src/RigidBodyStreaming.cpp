@@ -34,7 +34,7 @@ int main(int argc, char **argv)
         //    printf("%s", rtProtocol.GetErrorString());
         //}
 
-        const char           serverAddr[] = "192.168.50.153";
+        const char           serverAddr[] = "192.168.50.50";
         const unsigned short basePort = 22222;
         const int            majorVersion = 1;
         const int            minorVersion = 19;
