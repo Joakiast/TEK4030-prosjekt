@@ -14,8 +14,8 @@ int main (int argc, char **argv){
     ros::NodeHandle n;
     ros::Rate loop_rate(10);
 
-    ros::Subscriber sub = n.subscribe("/vrpn_client_node/waffle1/pose", 1000, callback);
-    ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/waffle1/cmd_vel", 1000);
+    ros::Subscriber sub = n.subscribe("/vrpn_client_node/burger2/pose", 1000, callback);
+    ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/burger2/cmd_vel", 1000);
     
     while (ros::ok()){
         
