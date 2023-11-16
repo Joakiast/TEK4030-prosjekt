@@ -5,9 +5,19 @@
 #include <iostream>
 #include <sstream>
 
+#include <tf2/utils.h>
+
 void callback(const geometry_msgs::PoseStamped::ConstPtr& msg){
     ROS_INFO_STREAM("Recieved: " << msg);
 }
+
+
+static double smallestDeltaAngle(const double& x, const double& y)
+{
+    // From https://stackoverflow.com/questions/1878907/the-smallest-difference-between-2-angles
+    return atan2(sin(x - y), cos(x - y));
+}
+
 
 int main (int argc, char **argv){
     ros::init(argc, argv, "sample");
@@ -28,6 +38,10 @@ int main (int argc, char **argv){
         twist.angular.x = 0.0;
         twist.angular.y = 0.0;
         twist.angular.z = 0.50;
+
+
+        geometry_msgs::Pose pose;                 // message received from somewhere
+        double yaw = tf2::getYaw(pose.orientation);
      
         pub.publish(twist);
 
