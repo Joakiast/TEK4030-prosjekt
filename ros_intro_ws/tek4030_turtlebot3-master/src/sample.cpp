@@ -42,8 +42,8 @@ int main (int argc, char **argv){
 
         //===========formlene=================================
 
-        int k = 0;
-        
+        double k = 0.0;
+
 
 
 
